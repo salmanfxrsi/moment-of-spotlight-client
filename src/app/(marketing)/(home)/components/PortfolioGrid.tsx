@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 const projects = [
   {
@@ -59,9 +60,9 @@ export default function PortfolioGrid() {
             </h2>
           </motion.div>
 
-          <button className="text-white border-b border-blue-500 pb-1 font-bold hover:text-blue-500 transition-all text-sm md:text-base">
+          <Link href={"/portfolio"} className="text-white border-b border-blue-500 pb-1 font-bold hover:text-blue-500 transition-all text-sm md:text-base">
             VIEW ALL PROJECTS
-          </button>
+          </Link>
         </div>
 
         {/* Bento Grid - Responsive version */}

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Instagram, Youtube } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -56,11 +56,11 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="h-4 w-[1px] bg-white/20 mx-2" />
-          <Link href="https://instagram.com" className="text-gray-400 hover:text-white transition-colors">
+          <Link href="https://www.instagram.com/momentofspotlight" className="text-gray-400 hover:text-white transition-colors">
             <Instagram size={18} />
           </Link>
           <Link
-            href="/booking"
+            href="/services"
             className="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded-full text-sm font-bold transition-all transform hover:scale-105"
           >
             BOOK NOW

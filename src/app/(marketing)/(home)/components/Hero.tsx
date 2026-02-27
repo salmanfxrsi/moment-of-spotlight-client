@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Play } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -69,12 +70,12 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
-            <button className="group bg-blue-600 text-white px-10 py-4 rounded-full font-bold hover:bg-blue-500 transition-all duration-300 flex items-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.3)]">
+            <Link href={"/services"} className="group bg-blue-600 text-white px-10 py-4 rounded-full font-bold hover:bg-blue-500 transition-all duration-300 flex items-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.3)]">
               BOOK YOUR SESSION
-            </button>
-            <button className="group text-white border border-white/20 backdrop-blur-sm px-10 py-4 rounded-full font-bold hover:bg-white/10 transition-all flex items-center gap-2">
+            </Link>
+            <Link href={"/portfolio"} className="group text-white border border-white/20 backdrop-blur-sm px-10 py-4 rounded-full font-bold hover:bg-white/10 transition-all flex items-center gap-2">
               <Play size={18} className="group-hover:fill-white transition-all" /> VIEW PORTFOLIO
-            </button>
+            </Link>
           </div>
         </motion.div>
       </div>

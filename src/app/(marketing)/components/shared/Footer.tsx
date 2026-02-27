@@ -17,7 +17,7 @@ export default function Footer() {
             </h2>
           </div>
           <Link
-            href="/booking"
+            href="/services"
             className="group relative inline-flex items-center justify-center w-32 h-32 md:w-40 md:h-40 bg-blue-600 rounded-full hover:bg-white transition-all duration-500"
           >
             <span className="text-white group-hover:text-black font-black text-center text-sm md:text-base leading-tight uppercase tracking-tighter transition-colors">
