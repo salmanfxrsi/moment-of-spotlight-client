@@ -81,11 +81,10 @@ export default function Pricing() {
   return (
     <section className="py-24 bg-black relative">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-left mb-16">
           <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter mb-4">
-            LEVEL <span className="text-blue-500">UP.</span>
+            LEVEL <span className="text-blue-500">UP</span>
           </h2>
-          <p className="text-gray-500 text-lg">Detailed packages for athletes who demand the best.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
